@@ -7,7 +7,6 @@ from odoo import fields, models
 class StockPicking(models.Model):
     _inherit = 'stock.picking'
 
-    ticket_id = fields.Many2one(
-        string="Stock Picking",
+    ticket_id = fields.Many2one(        
         comodel_name="helpdesk.ticket"
     )
